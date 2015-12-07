@@ -44,8 +44,10 @@ var liveVis = (function() {
             .attr("r", function(d) {
                 return d.r;
             })
-            .style("fill", function(d, i) {
-                return colors(i);
+//            .style("fill", function(d, i) {
+//               return colors(i);
+            .style("fill", function(d) {
+                return colors(d.i);
             });
         
         //circles which no longer have data associated with them turn black, then fade out
