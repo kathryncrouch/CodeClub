@@ -20,8 +20,8 @@ var liveVis = (function() {
 
     //makes an array of 20 colour values
     /* NOTE - this actually makes a scale
-    i.e., a function that will bin your data
-    into 20 categories to assign them colours */
+    i.e., a function that will fit the domain of your data
+    to the range of colours available */
     var colors = d3.scale.category20()
 
     //draw dataset

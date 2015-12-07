@@ -73,6 +73,9 @@ var circles = (function() {
                 var xAxis = makeAxis(xScale, "bottom", 4);
                 var yAxis = makeAxis(yScale, "left", 10);
                 
+                /* NOTE - this actually makes a scale
+                i.e., a function that will fit the domain of your data
+                to the range of colours available */
                 var colors = d3.scale.category10();
                 
                 //defines what happens when an area is brushed - called below
